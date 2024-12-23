@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct AutismAppTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FilesScreen()
+                .modelContainer(for: Card.self) // تحديد الـ model container لـ Card
         }
     }
 }
